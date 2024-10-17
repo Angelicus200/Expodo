@@ -1,0 +1,186 @@
+body{
+   
+    margin: 0%;
+}
+
+
+
+.cajaPadre{
+position: absolute;
+
+margin: 0%;
+width: 100%;
+height: 100%;
+background: rgb(180,90,58);
+background: linear-gradient(90deg, rgba(180,90,58,1) 0%, rgba(253,62,29,1) 50%, rgba(252,250,69,1) 100%);
+
+}
+
+
+ul{
+    position: relative;
+    background: rgb(180,90,58);
+    background: linear-gradient(90deg, rgba(180,90,58,1) 0%, rgba(253,62,29,1) 37%, rgba(0,0,0,1) 100%);
+    top: 2px;
+    list-style: none;
+    text-align: right;
+    
+   
+}
+
+.menu{
+    
+    position: relative;
+    background: rgb(180,90,58);
+background: linear-gradient(90deg, rgba(180,90,58,1) 0%, rgba(253,62,29,1) 37%, rgba(0,0,0,1) 100%);
+   width: 100%;
+   height: 80px;
+}
+
+.logo{
+    position: relative;
+    top: 6px;
+    right: 800px;
+    width: 80px;
+    height: 60px;
+    border-radius: 20%;
+    box-sizing: border-box;
+}
+
+
+
+li{
+    
+    position: relative;
+    top: -40px;
+    color: black;
+    font-size: 20px;
+    background-color: beige;
+    display: inline-block;
+    padding: 15px;
+    justify-items: center ;
+    align-items: center;
+    text-align: center;
+    text-indent: 40px;
+    border-radius: 5%;
+    border:black 2px solid;
+    top: 6px;
+
+}
+
+.vid{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    border-radius: 10%;
+}
+
+.vide{
+    background-color:rgb(142, 242, 255);
+    position: relative;
+    top: -420px;
+    width: 610px;
+    height: 410px;
+    border-radius: 10%;
+    border: black 3px solid;
+}
+
+.informacion{
+    position: relative;
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,45,45,1) 100%);
+    width: 720px;
+    height: 520px;
+    top: 20px;
+    left: 630px;
+    border-radius: 20px;
+    font-size: 30px;
+    color: rgb(43, 43, 43);
+    font-family: Arial, Helvetica, sans-serif;
+    border: red 3px solid;
+
+}
+
+/*slider*/
+.slider{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    left: 200px;
+
+}
+.slides{
+    width:500% ;
+    height:200px;
+    display: flex;
+}
+.slides input{
+    display: none;
+
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+
+}
+.slide img{
+    width: 100%;
+    height: 200px;
+}
+.nav-manual{
+    position: absolute;
+    width: 300px;
+    margin-top: -40px;
+    display: flex;
+    justify-content:center;
+}
+.manual-btn{
+    border: 2px solid #e5e5e5;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+     
+
+
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px ;
+
+
+}
+.manual-btn:hover{
+    background-color:#e5e5e5 ;
+
+}
+#radio1:checked ~ .first{
+    margin-left:0 ;
+
+}
+#radio2:checked ~ .first{
+    margin-left:-20% ;
+
+}
+#radio3:checked ~ .first{
+    margin-left:-40% ;
+
+}
+#radio4:checked ~ .first{
+    margin-left:-60% ;
+
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background-color: #e5e5e5;
+}
+#radio2:checked ~ .nav-auto .auto-btn2{
+    background-color: #e5e5e5;
+}#radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: #e5e5e5;
+}
+#radio4:checked ~ .nav-auto .auto-btn4{
+    background-color: #e5e5e5;
+}
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú despegable</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+   
+    <nav class="nav">
+        
+        <ul class="list">
+<!--INICIO-->
+            <li class="list__item">
+                <marquee behavior="Alternante"><h1>VOLEIBOL</h1></marquee>
+                <div class="list__button">
+                    <img src="dashboard.svg" class="list__img">
+                   Inicio
+                </div>
+            </li>
+<!--SERVICIOS-->
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="docs.svg" class="list__img">
+                    <a href="#" class="nav__link">Eventos Importantes</a>
+                    <img src="arrow.svg" class="list__arrow">
+                </div>
+<!--ESTOY DENTRO-->
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="pag1.html" class="nav__link nav__link--inside">VNL2024</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="JuegosOlim.html" class="nav__link nav__link--inside">JUEGOS OLIMPICOS2024</a>
+                    </li>
+                </ul>
+
+            </li>
+
+<!--ESTADISTICAS-->
+            <li class="list__item">
+                <div class="list__button">
+                    <img src="stats.svg" class="list__img">
+                    <a href="Resultados.html" class="nav__link">Equipos preferidos a ganar</a>
+                </div>
+            </li>
+
+<!--NOTIFICACIONES-->
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="bell.svg" class="list__img">
+                    <a href="PAG3.html" class="nav__link">Contactanos</a>
+                    
+                </div>
+
+
+            </li>
+<!--CONTACTO-->
+
+           
+
+        </ul>
+
+    </nav>
+
+
+    <!--SLIDER-->
+
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="slide first">
+                <img src="imagenSlider1.jpg">
+
+            </div>
+
+            <div class="slide">
+                <img src="imagenSlider2.jpg" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="imagenSlider3.jpg" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="imagenSlider4.jpg" alt="">
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+
+            </div>
+
+
+        </div>
+        <div class="nav-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+
+    
+    <script src="main.js"></script>
+
+</body>
+</html>

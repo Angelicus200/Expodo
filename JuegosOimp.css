@@ -1,0 +1,94 @@
+body{
+    position: relative;
+    height: 100%;
+    margin: 0;
+    background: rgb(242,68,68);
+background: linear-gradient(90deg, rgba(242,68,68,1) 0%, rgba(255,167,33,1) 35%, rgba(230,126,52,1) 100%);
+
+}
+
+
+ul{
+    position: relative;
+    background: rgb(180,90,58);
+    background: linear-gradient(90deg, rgba(180,90,58,1) 0%, rgba(253,62,29,1) 37%, rgba(0,0,0,1) 100%);
+    height: 80px;
+    top: 2px;
+    list-style: none;
+    text-align: right;
+    
+   
+}
+
+li{
+    position: relative;
+    top: -40px;
+    color: black;
+    font-size: 20px;
+    background-color: beige;
+    display: inline-block;
+    padding: 15px;
+    justify-items: center ;
+    align-items: center;
+    text-align: center;
+    text-indent: 40px;
+    border-radius: 5%;
+    border:black 2px solid;
+    top: 6px;
+
+}
+
+h1{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.tuno{
+    position: relative;
+    background: rgb(241,133,38);
+background: linear-gradient(0deg, rgba(241,133,38,1) 37%, rgba(253,100,45,1) 100%);
+    width: 100%;
+    height: 300px;
+    border-radius: 5%;
+}
+
+.vido{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 10%;
+}
+
+.infodos{
+    position: relative;
+    background: rgb(251,97,63);
+background: radial-gradient(circle, rgba(251,97,63,1) 0%, rgba(252,213,70,1) 100%);
+width: 50%;
+height: 300px;
+border-radius: 5px;
+border: 2px solid;
+}
+
+.viddos{
+    position: relative;
+    top: -604px;
+    margin-left: 50%;
+    width: 50%;
+    height: 300px;
+    border-radius: 10%;
+}
+
+.infotres{
+    position: relative;
+    margin-bottom: -800px;
+    background: rgb(251,97,63);
+background: radial-gradient(circle, rgba(251,97,63,1) 0%, rgba(252,213,70,1) 100%);
+top: -304px;
+margin-left: 50%;
+width: 50%;
+height: 300px;
+border-radius: 5px;
+border: 2px solid;
+}

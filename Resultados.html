@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESULTADOS</title>
+    <link rel="stylesheet" href="Resultados.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+   
+    <h1>EQUIPOS PREFERIDOS A GANAR</h1>
+
+    <!-- Agregar un contenedor para el gráfico -->
+    <canvas id="barChart" width="10" height="5"></canvas>
+
+    <script>
+        // Datos para el gráfico de barras
+        var data = {
+            labels: ["JAPON", "FRANCIA", "ESLOVENIA", " POLONIA", " OTROS"],
+            datasets: [{
+                label: "preferencias",
+                data: [20.50, 14.00, 3.50, 10, 12, 10, 20],
+                backgroundColor: 'rgb(4, 24, 124)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        };
+
+        // Opciones del gráfico de barras
+        var options = {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            },
+            plugins: {
+                datalabels: {
+                    anchor: 'end',
+                    align: 'end',
+                    offset: 4,
+                    color: 'red',
+                    font: {
+                        weight: 'bold',
+                        size: 12
+                    }
+                }
+            }
+        };
+
+        // Crear el gráfico de barras
+        var ctx = document.getElementById('barChart').getContext('2d');
+        var barChart = new Chart(ctx, {
+            type: 'bar',
+            data: data,
+            options: options
+        });
+    </script>
+    <center>
+        <a href="index.html"><button class="my-button">VOLVER</button></a>
+    </center>
+     
+    <div class="info">
+        <h1 class="uno">
+            Fue la segunda final consecutiva para Francia en la VNL 2024 y, con el oro, se convirtió en la tercera selección masculina de voleibol en defender con éxito  su titulo, Además de la extinta Unión Soviética en Tokio 1964 y México 1968, Estados Unidos lo logró en Los Ángeles 1984 y en Seúl 1988, hace 36 años.
+        </h1>
+
+    </div>
+
+</body>
+</html>
